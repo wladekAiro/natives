@@ -13,6 +13,11 @@
 
 Route::get('/', 'WelcomeController@index');
 
+Route::get('/landing', 'WelcomeController@landing');
+
+Route::get('/Resturant', 'ResturantController@index');
+Route::get('/Nightlife', 'NightlifeController@index');
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
