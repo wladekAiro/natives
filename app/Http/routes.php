@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@landing');
 
-Route::get('/landing', 'WelcomeController@landing');
+Route::get('/Legal', 'WelcomeController@index');
 
 Route::get('/Resturant', 'ResturantController@index');
 Route::get('/Nightlife', 'NightlifeController@index');

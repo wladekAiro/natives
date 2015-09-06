@@ -12,7 +12,7 @@
 		<div class="select">
 			<h1>Night Life</h1>
 			<hr class="intro-divider" id="mydivider" />
-			<a href="/Nightlife" class="btn btn-primary" id="proceed">Enter</a>
+			<a href="/Legal" class="btn btn-primary" id="proceed">Enter</a>
 		</div>
 	</div>
 </div>
