@@ -18,7 +18,7 @@ Route::get('/landing', 'WelcomeController@landing');
 Route::get('/Resturant', 'ResturantController@index');
 Route::get('/Nightlife', 'NightlifeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('admin', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

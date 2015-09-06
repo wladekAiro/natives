@@ -3,7 +3,7 @@
 @section('content')
 <div class="row" id="nightheader">
 
-	<div class="col-md-12 col-sm-12">
+	<div class="col-md-9 col-sm-12 col-lg-9 col-md-offset-1 col-lg-offset-1" id="slider-container">
 		<div id="nightdescription">
 			<div id="nightslider" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -11,6 +11,11 @@
     <li data-target="#nightslider" data-slide-to="0" class="active"></li>
     <li data-target="#nightslider" data-slide-to="1"></li>
     <li data-target="#nightslider" data-slide-to="2"></li>
+      <li data-target="#nightslider" data-slide-to="3"></li>
+      <li data-target="#nightslider" data-slide-to="4"></li>
+      <li data-target="#nightslider" data-slide-to="5"></li>
+      <li data-target="#nightslider" data-slide-to="6"></li>
+      <li data-target="#nightslider" data-slide-to="7"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -36,6 +41,34 @@
         <p>Every Friday</p>
       </div>
     </div>
+      <div class="item">
+          <img src="/images/slide2.jpg" alt="...">
+          <div class="carousel-caption">
+              <h1>Thursday Event</h1>
+              <p>No limits</p>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/images/poster1.jpg" alt="...">
+          <div class="carousel-caption">
+              <h1>Friday parties</h1>
+              <p>No limits</p>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/images/slide3.jpg" alt="...">
+          <div class="carousel-caption">
+              <h1>Sarturday Outings</h1>
+              <p>No limits</p>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/images/slide2.jpg" alt="...">
+          <div class="carousel-caption">
+              <h1>Cool Sundays</h1>
+              <p>No limits</p>
+          </div>
+      </div>
 
     
   </div>
