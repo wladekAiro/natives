@@ -56,7 +56,7 @@
      
       <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Theme nights</a></li>
-          <li><a href="#">Events</a></li>
+          <li><a href="/event/">Events</a></li>
           <li><a href="#">Gallery</a></li>
          <li><a href="#">Find Us</a></li>
         <li><a href="#">Contact Us</a></li>

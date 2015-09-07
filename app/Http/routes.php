@@ -24,3 +24,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::group(array('prefix' => 'event') , function(){
+    Route::get('/', array('as' => 'front.events','uses'=>'EventsController@index'));
+    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
+});

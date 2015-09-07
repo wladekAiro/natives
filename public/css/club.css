@@ -4,7 +4,7 @@ html,body{
 
 
 #mynavbar{
-	background-color: transparent;
+	background-color: #060200;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-top: 0px;
@@ -91,7 +91,6 @@ html,body{
 
 #nightheader{
 	/* background: url('../images/club.jpg') center center no-repeat; */
-	background-size: cover;
 	height: 500px;
 
 }
@@ -100,6 +99,18 @@ html,body{
 	height: 400px;
     padding-top: 9%;
 
+}
+
+#nightslider ol{
+    margin-top: 100%;
+}
+
+#logo{
+    background: url('../images/natives_logo2.png') center center no-repeat;
+    background-size: cover;
+    background-color: #060200;
+    width: 20%;
+    height: 20%;
 }
 
 #slider-container{
