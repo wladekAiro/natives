@@ -45,6 +45,9 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">Natives</a>
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="/Nightlife">Home</a> </li>
+        </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

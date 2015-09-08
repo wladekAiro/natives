@@ -176,7 +176,13 @@ html,body{
 	padding: 10px 10px;
 }
 #news{
-	background-color: #080808;
+	background-color: #FFF;
 	padding-top: 5%;
 	padding-bottom: 5%;
+}
+
+#news_{
+    background-color: #080808;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }

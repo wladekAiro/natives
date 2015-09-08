@@ -87,7 +87,7 @@
 	</div>
 	
 </div><!-- end of nightheader -->
-<div class="row" id="news">
+<div class="row" id="news_">
 <!-- end of container -->
 </div>
 
