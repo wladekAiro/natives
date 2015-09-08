@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/admin">Natives Admin</a>
+				<a class="navbar-brand" href="">Natives Admin</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,8 +52,27 @@
 			</div>
 		</div>
 	</nav>
-
-	@yield('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Navigation</div>
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="/admin/theme-night/home">Theme Nights</a></li>
+                            <li><a href="/admin/event/home">Events</a></li>
+                            <li><a href="/admin/dj/home">Djs</a></li>
+                            <li><a href="/admin/partners/home">Partners</a></li>
+                            <li><a href="/admin/sponsor/home">Sponsors</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                @yield('content')
+            </div>
+        </div>
+    </div>
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

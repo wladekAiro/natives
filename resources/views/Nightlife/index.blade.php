@@ -22,22 +22,22 @@
   <div class="item active" style="background: url('/images/poster1.jpg') center center no-repeat; background-size: cover">
       {{--<img src="/images/poster1.jpg" alt="...">--}}
       <div class="carousel-caption">
-      <h3>Top 100 Launch Party</h3>
+      <h3>Monday Event</h3>
        <p></p>
       </div>
     </div>
     <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
       {{--<img src="/images/slide2.jpg" alt="...">--}}
       <div class="carousel-caption">
-        <h3>Crazy Thursdays</h3>
+        <h3>Tuesday Event</h3>
         <p>No limits</p>
       </div>
     </div>
     <div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">
       {{--<img src="/images/slide3.jpg" alt="...">--}}
       <div class="carousel-caption">
-        <h3>Ladies Night</h3>
-        <p>Every Friday</p>
+        <h3>Wednesday Event</h3>
+        <p>No Limits</p>
       </div>
     </div>
       <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
@@ -50,21 +50,21 @@
       <div class="item" style="background: url('/images/poster1.jpg') center center no-repeat; background-size: cover">
           {{--<img src="/images/poster1.jpg" alt="...">--}}
           <div class="carousel-caption">
-              <h3>Friday parties</h3>
+              <h3>Friday Event</h3>
               <p>No limits</p>
           </div>
       </div>
       <div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">
           {{--<img src="/images/slide3.jpg" alt="...">--}}
           <div class="carousel-caption">
-              <h3>Sarturday Outings</h3>
+              <h3>Sarturday Event</h3>
               <p>No limits</p>
           </div>
       </div>
       <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
           {{--<img src="/images/slide2.jpg" alt="..." >--}}
           <div class="carousel-caption">
-              <h3>Cool Sundays</h3>
+              <h3>Sunday Event</h3>
               <p>No limits</p>
           </div>
       </div>
@@ -89,7 +89,6 @@
 </div><!-- end of nightheader -->
 <div class="row" id="news">
 <!-- end of container -->
-    <p>Test jhbhbjhbhbjh.</p>
 </div>
 
 

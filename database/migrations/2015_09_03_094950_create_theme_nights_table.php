@@ -16,8 +16,8 @@ class CreateThemeNightsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
-            $table->string('name');
-            $table->text('Description');
+            $table->string('name') -> uniques();
+            $table->text('description');
             $table->date('date');
             $table->string('picture');
 

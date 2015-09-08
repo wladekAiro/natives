@@ -5,8 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 class ThemeNight extends Model {
 
 	//
-    protected $table = ['theme_nights'];
-    protected $fillable = ['name','date','picture'];
+    protected $table = 'theme_nights';
+    protected $fillable = ['name', 'description' ,'date','picture'];
 
     public function host(){
         return $this->hasMany('Host')->through('ThemeNightHost');
