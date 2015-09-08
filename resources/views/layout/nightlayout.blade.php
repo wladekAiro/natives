@@ -55,7 +55,21 @@
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Theme nights</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Theme Nights
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Monday Event</a></li>
+                  <li><a href="#">Tuesday Event</a></li>
+                  <li><a href="#">Wednesday Event</a></li>
+                  <li><a href="#">Thursday Event</a></li>
+                  <li><a href="#">Friday Event</a></li>
+                  <li><a href="#">Saturday Event</a></li>
+                  <li><a href="#">Sunday Event</a></li>
+              </ul>
+          </li>
           <li><a href="/event/">Events</a></li>
           <li><a href="#">Gallery</a></li>
          <li><a href="#">Find Us</a></li>
