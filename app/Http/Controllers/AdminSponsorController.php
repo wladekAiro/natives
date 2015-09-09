@@ -1,15 +1,14 @@
 <?php namespace App\Http\Controllers;
 
-use App\Dj;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Sponsor;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 
-class AdminDjController extends Controller {
+class AdminSponsorController extends Controller {
 
     /**
      * Display a listing of the resource.
@@ -19,8 +18,8 @@ class AdminDjController extends Controller {
     public function index()
     {
         //
-        $djs = Dj::all();
-        return view('Dj/Admin/home' , compact('djs'));
+        $sponsors = Sponsor::all();
+        return view('Sponsors/Admin/home' , compact('sponsors'));
     }
 
     /**
@@ -31,7 +30,7 @@ class AdminDjController extends Controller {
     public function create()
     {
         //
-        return view('Dj/Admin/form');
+        return view('Sponsors/Admin/form');
     }
 
     /**
@@ -56,15 +55,15 @@ class AdminDjController extends Controller {
 
             Input::file('picture')->move($destinationPath, $filename);
 
-            $dj = new Dj();
-            $dj ->name =  Input::get('name');
-            $dj ->description = Input::get('description');
-            $dj -> picture = '/'.$filename;
-            $dj->save();
+            $sponsor = new Sponsor();
+            $sponsor ->name =  Input::get('name');
+            $sponsor ->description = Input::get('description');
+            $sponsor -> picture = '/'.$filename;
+            $sponsor->save();
 
         }
 
-        return Redirect::to('admin/dj/home');
+        return Redirect::to('admin/sponsor/home');
     }
 
     /**
@@ -76,8 +75,8 @@ class AdminDjController extends Controller {
     public function show($id)
     {
         //
-        $dj = Dj::find($id);
-        return view('Dj/Admin/show' , compact('dj'));
+        $sponsor = Sponsor::find($id);
+        return view('Sponsors/Admin/show' , compact('sponsor'));
     }
 
     /**
@@ -89,8 +88,8 @@ class AdminDjController extends Controller {
     public function edit($id)
     {
         //
-        $dj = Dj::find($id);
-        return view('Dj/Admin/editForm' , compact('dj' , 'id'));
+        $sponsor = Sponsor::find($id);
+        return view('Sponsors/Admin/editForm' , compact('sponsor' , 'id'));
     }
 
     /**
@@ -116,15 +115,15 @@ class AdminDjController extends Controller {
 
             Input::file('picture')->move($destinationPath, $filename);
 
-            $dj = Dj::find($id);
-            $dj ->name =  Input::get('name');
-            $dj ->description = Input::get('description');
-            $dj -> picture = '/'.$filename;
-            $dj->save();
+            $sponsor = Sponsor::find($id);
+            $sponsor ->name =  Input::get('name');
+            $sponsor ->description = Input::get('description');
+            $sponsor -> picture = '/'.$filename;
+            $sponsor->save();
 
         }
 
-        return Response::to('admin/dj/home');
+        return Redirect::to('admin/sponsor/home');
     }
 
     /**
@@ -136,8 +135,8 @@ class AdminDjController extends Controller {
     public function destroy($id)
     {
         //
-        Dj::destroy($id);
-        return Redirect::to('admin/dj/home');
+        Sponsor::destroy($id);
+        return Redirect::to('admin/sponsor/home');
     }
 
 }

@@ -12,15 +12,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand">Events</a>
+                    <a href="#" class="navbar-brand">Partner(s)</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/admin/event/home">View All</a></li>
-                        <li><a href="/admin/event/form">Create</a></li>
+                        <li><a href="/admin/partner/home">View All</a></li>
+                        <li><a href="/admin/partner/form">Create</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -28,26 +28,24 @@
         <div class="panel-body">
             <table class="table table-bordered table-responsive table-striped">
                 <thead>
-                  <th>Event Picture</th>
-                  <th>Event Name</th>
-                  <th>Event Date</th>
-                  <th>Event Description</th>
+                  <th>Partner Picture</th>
+                  <th>Partner Name</th>
+                  <th>Partner Description</th>
                   <th></th>
                   <th></th>
                   <th></th>
                 </thead>
                 <tbody>
-                @foreach ($events as $event)
+                @foreach ($partners as $partner)
                   <tr>
                       <td>
-                          <img src="{{ $event->picture }}" alt="Picture">
+                          <img src="{{ $partner->picture }}" alt="Picture">
                       </td>
-                      <td>{{ $event->name }}</td>
-                      <td>{{ $event->date }}</td>
-                      <td>{{ $event->description }}</td>
-                      <td><a href="/admin/event/more/{{ $event->id }}">View more</a></td>
-                      <td><a href="/admin/event/edit/{{ $event->id }}">Edit</a></td>
-                      <td><a href="/admin/event/delete/{{ $event->id }}">Delete</a></td>
+                      <td>{{ $partner->name }}</td>
+                      <td>{{ $partner->description }}</td>
+                      <td><a href="/admin/partner/more/{{ $partner->id }}">View more</a></td>
+                      <td><a href="/admin/partner/edit/{{ $partner->id }}">Edit</a></td>
+                      <td><a href="/admin/partner/delete/{{ $partner->id }}">Delete</a></td>
                   </tr>
                 @endforeach
                 </tbody>

@@ -36,11 +36,45 @@ Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
     //admin event routes
     Route::group(array('prefix' => 'event' ) , function(){
         Route::get('/home' , 'AdminEventController@index');
+        Route::get('/form' , 'AdminEventController@create');
+        Route::post('/create' , 'AdminEventController@store');
+        Route::get('/more/{id}' , array('uses' => 'AdminEventController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/edit/{id}' , array('uses' => 'AdminEventController@edit'))->where('id' , '[1-9][0-9]*');
+        Route::post('/update/{id}' , array('uses' => 'AdminEventController@update'))->where('id' , '[1-9][0-9]*');
+        Route::get('/delete/{id}' , array('uses' => 'AdminEventController@destroy'))->where('id' , '[1-9][0-9]*');
     });
 
-    //admin dj controller
+    //admin dj routes
     Route::group(array('prefix' => 'dj' ) , function(){
-        Route::get('/home' , 'AdminEventController@index');
+        Route::get('/home' , 'AdminDjController@index');
+        Route::get('/form' , 'AdminDjController@create');
+        Route::post('/create' , 'AdminDjController@store');
+        Route::get('/more/{id}' , array('uses' => 'AdminDjController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/edit/{id}' , array('uses' => 'AdminDjController@edit'))->where('id' , '[1-9][0-9]*');
+        Route::post('/update/{id}' , array('uses' => 'AdminDjController@update'))->where('id' , '[1-9][0-9]*');
+        Route::get('/delete/{id}' , array('uses' => 'AdminDjController@destroy'))->where('id' , '[1-9][0-9]*');
+    });
+
+    //admin partners routes
+    Route::group(array('prefix' => 'partner' ) , function(){
+        Route::get('/home' , 'AdminPartnersController@index');
+        Route::get('/form' , 'AdminPartnersController@create');
+        Route::post('/create' , 'AdminPartnersController@store');
+        Route::get('/more/{id}' , array('uses' => 'AdminPartnersController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/edit/{id}' , array('uses' => 'AdminPartnersController@edit'))->where('id' , '[1-9][0-9]*');
+        Route::post('/update/{id}' , array('uses' => 'AdminPartnersController@update'))->where('id' , '[1-9][0-9]*');
+        Route::get('/delete/{id}' , array('uses' => 'AdminPartnersController@destroy'))->where('id' , '[1-9][0-9]*');
+    });
+
+    //admin sponsor routes
+    Route::group(array('prefix' => 'sponsor' ) , function(){
+        Route::get('/home' , 'AdminSponsorController@index');
+        Route::get('/form' , 'AdminSponsorController@create');
+        Route::post('/create' , 'AdminSponsorController@store');
+        Route::get('/more/{id}' , array('uses' => 'AdminSponsorController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/edit/{id}' , array('uses' => 'AdminSponsorController@edit'))->where('id' , '[1-9][0-9]*');
+        Route::post('/update/{id}' , array('uses' => 'AdminSponsorController@update'))->where('id' , '[1-9][0-9]*');
+        Route::get('/delete/{id}' , array('uses' => 'AdminSponsorController@destroy'))->where('id' , '[1-9][0-9]*');
     });
 
 });

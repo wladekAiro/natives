@@ -12,15 +12,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#" class="navbar-brand">Theme Night</a>
+                        <a href="#" class="navbar-brand">Partner(s)</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="/admin/theme-night/home">View All</a></li>
-                            <li><a href="/admin/theme-night/form">Create</a></li>
+                            <li><a href="/admin/partner/home">View All</a></li>
+                            <li><a href="/admin/partner/form">Create</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -40,7 +40,7 @@
                                     </div>
                                 @endif
 
-                                <form class="form-horizontal" role="form" method="POST" action="/admin/event/update/{{ $event->id }}" enctype="multipart/form-data">
+                                <form class="form-horizontal" role="form" method="POST" action="/admin/partner/update/{{ $partner->id }}" enctype="multipart/form-data">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                     <div class="form-group">
@@ -50,22 +50,16 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label">Event name</label>
+                                        <label class="col-md-4 control-label">Partner Name</label>
                                         <div class="col-md-6">
-                                            <input type="text" class="form-control" name="name" value="{{ $event->name }}">
+                                            <input type="text" class="form-control" name="name" value="{{ $partner->name }}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label">Description</label>
+                                        <label class="col-md-4 control-label">Brief description</label>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" name="description" value="{{ $event->description }}"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Date</label>
-                                        <div class="col-md-6">
-                                            <input type="date" class="form-control" name="date" value="{{ $event->date }}">
+                                            <textarea class="form-control" name="description" value="{{ $partner->description }}"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">

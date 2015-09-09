@@ -62,7 +62,7 @@
                             <li><a href="/admin/theme-night/home">Theme Nights</a></li>
                             <li><a href="/admin/event/home">Events</a></li>
                             <li><a href="/admin/dj/home">Djs</a></li>
-                            <li><a href="/admin/partners/home">Partners</a></li>
+                            <li><a href="/admin/partner/home">Partners</a></li>
                             <li><a href="/admin/sponsor/home">Sponsors</a></li>
                         </ul>
                     </div>

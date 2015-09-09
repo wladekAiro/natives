@@ -1,15 +1,15 @@
 <?php namespace App\Http\Controllers;
 
-use App\Dj;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Partner;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 
-class AdminDjController extends Controller {
+class AdminPartnersController extends Controller {
 
     /**
      * Display a listing of the resource.
@@ -19,8 +19,8 @@ class AdminDjController extends Controller {
     public function index()
     {
         //
-        $djs = Dj::all();
-        return view('Dj/Admin/home' , compact('djs'));
+        $partners = Partner::all();
+        return view('Partners/Admin/home' , compact('partners'));
     }
 
     /**
@@ -31,7 +31,7 @@ class AdminDjController extends Controller {
     public function create()
     {
         //
-        return view('Dj/Admin/form');
+        return view('Partners/Admin/form');
     }
 
     /**
@@ -56,15 +56,15 @@ class AdminDjController extends Controller {
 
             Input::file('picture')->move($destinationPath, $filename);
 
-            $dj = new Dj();
-            $dj ->name =  Input::get('name');
-            $dj ->description = Input::get('description');
-            $dj -> picture = '/'.$filename;
-            $dj->save();
+            $partner = new Partner();
+            $partner ->name =  Input::get('name');
+            $partner ->description = Input::get('description');
+            $partner -> picture = '/'.$filename;
+            $partner->save();
 
         }
 
-        return Redirect::to('admin/dj/home');
+        return Redirect::to('admin/partner/home');
     }
 
     /**
@@ -76,8 +76,8 @@ class AdminDjController extends Controller {
     public function show($id)
     {
         //
-        $dj = Dj::find($id);
-        return view('Dj/Admin/show' , compact('dj'));
+        $partner = Partner::find($id);
+        return view('Partners/Admin/show' , compact('partner'));
     }
 
     /**
@@ -89,8 +89,8 @@ class AdminDjController extends Controller {
     public function edit($id)
     {
         //
-        $dj = Dj::find($id);
-        return view('Dj/Admin/editForm' , compact('dj' , 'id'));
+        $partner = Partner::find($id);
+        return view('Partners/Admin/editForm' , compact('partner' , 'id'));
     }
 
     /**
@@ -116,15 +116,15 @@ class AdminDjController extends Controller {
 
             Input::file('picture')->move($destinationPath, $filename);
 
-            $dj = Dj::find($id);
-            $dj ->name =  Input::get('name');
-            $dj ->description = Input::get('description');
-            $dj -> picture = '/'.$filename;
-            $dj->save();
+            $partner = Partner::find($id);
+            $partner ->name =  Input::get('name');
+            $partner ->description = Input::get('description');
+            $partner -> picture = '/'.$filename;
+            $partner->save();
 
         }
 
-        return Response::to('admin/dj/home');
+        return Redirect::to('admin/partner/home');
     }
 
     /**
@@ -136,8 +136,8 @@ class AdminDjController extends Controller {
     public function destroy($id)
     {
         //
-        Dj::destroy($id);
-        return Redirect::to('admin/dj/home');
+        Partner::destroy($id);
+        return Redirect::to('admin/partner/home');
     }
 
 }
