@@ -54,40 +54,44 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Dj's
+                    @if($event -> djs -> isEmpty())
+                        <h1>No djs</h1>
+                        @else
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Dj's
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-md-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                                Dj 1
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                                Dj 2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                                Dj 3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="panel-body">
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Dj 1
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Dj 2
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Dj 3
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
                 </div>
             </div>
         </div>

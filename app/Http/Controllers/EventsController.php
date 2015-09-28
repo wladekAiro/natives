@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Envent;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,8 @@ class EventsController extends Controller {
 	public function index()
 	{
 		//
-        return view('Events.index');
+		$events = Envent::all();
+        return view('Events.index', compact('events'));
 	}
 
 	/**

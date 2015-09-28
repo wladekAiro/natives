@@ -17,6 +17,7 @@ Route::get('/Legal', 'WelcomeController@index');
 
 Route::get('/Resturant', 'ResturantController@index');
 Route::get('/Nightlife', 'NightlifeController@index');
+Route::get('/home', 'HomeController@index');
 
 //backend routes
 Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
@@ -86,8 +87,26 @@ Route::controllers([
 ]);
 
 //front routes
-Route::group(array('prefix' => 'event') , function(){
+Route::group(array('prefix' => 'events') , function(){
     Route::get('/', array('as' => 'front.events','uses'=>'EventsController@index'));
+    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
+});
+Route::group(array('prefix' => 'all_events') , function(){
+    Route::get('/', array('as' => 'front.all_events','uses'=>'All_EventsController@index'));
+    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
+});
+Route::group(array('prefix' => 'event') , function(){
+    Route::get('/', array('as' => 'front.event','uses'=>'EventController@index'));
+	Route::get('/more/{eventId}', array('uses'=>'EventController@show'))->where('id' , '[1-9][0-9]*');
+    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
+});
+Route::group(array('prefix' => 'gallery') , function(){
+    Route::get('/', array('as' => 'front.gallery','uses'=>'GalleryController@index'));
+    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
+});
+Route::group(array('prefix' => 'theme') , function(){
+    Route::get('/', array('as' => 'front.theme','uses'=>'NightlifeController@index'));
+	Route::get('/show/{themeId}', array('uses'=>'NightlifeController@show'))->where('id' , '[1-9][0-9]*');
     Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
 });
 

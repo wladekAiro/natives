@@ -1,6 +1,6 @@
 @extends('layout.nightlayout')
-
 @section('content')
+<div class="body">
 <div class="row" id="nightheader">
 
 	<div class="col-md-9 col-sm-12 col-lg-9 col-md-offset-1 col-lg-offset-1" id="slider-container">
@@ -8,66 +8,65 @@
 			<div id="nightslider" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#nightslider" data-slide-to="0" class="active"></li>
-    <li data-target="#nightslider" data-slide-to="1"></li>
-    <li data-target="#nightslider" data-slide-to="2"></li>
-      <li data-target="#nightslider" data-slide-to="3"></li>
-      <li data-target="#nightslider" data-slide-to="4"></li>
-      <li data-target="#nightslider" data-slide-to="5"></li>
-      <li data-target="#nightslider" data-slide-to="6"></li>
+    <li data-target="#nightslider" data-slide-to="{{ $theme1->id }}" class="active"></li>
+      @foreach( $theme2 as $c)
+    <li data-target="#nightslider" data-slide-to="{{ $c -> id }}"></li>
+      @endforeach
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-  <div class="item active" style="background: url('/images/poster1.jpg') center center no-repeat; background-size: cover">
-      {{--<img src="/images/poster1.jpg" alt="...">--}}
+  <div class="item active">
+      <a href="/theme/show/{{ $theme1->id }}"><img src="{{ $theme1->picture }}" alt="..."></a>
       <div class="carousel-caption">
       <h3>Monday Event</h3>
-       <p></p>
+       <p>No limits</p>
       </div>
     </div>
-    <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
-      {{--<img src="/images/slide2.jpg" alt="...">--}}
+    @foreach($theme2 as $theme)
+    <div class="item">
+      <a href="/theme/show/{{ $theme->id }}"><img src="{{ $theme->picture }}" alt="..."></a>
       <div class="carousel-caption">
         <h3>Tuesday Event</h3>
         <p>No limits</p>
       </div>
     </div>
-    <div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">
+      @endforeach
+    {{--<div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">--}}
       {{--<img src="/images/slide3.jpg" alt="...">--}}
-      <div class="carousel-caption">
-        <h3>Wednesday Event</h3>
-        <p>No Limits</p>
-      </div>
-    </div>
-      <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
+      {{--<div class="carousel-caption">--}}
+        {{--<h3>Wednesday Event</h3>--}}
+        {{--<p>No Limits</p>--}}
+      {{--</div>--}}
+    {{--</div>--}}
+      {{--<div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">--}}
           {{--<img src="/images/slide2.jpg" alt="...">--}}
-          <div class="carousel-caption">
-              <h3>Thursday Event</h3>
-              <p>No limits</p>
-          </div>
-      </div>
-      <div class="item" style="background: url('/images/poster1.jpg') center center no-repeat; background-size: cover">
+          {{--<div class="carousel-caption">--}}
+              {{--<h3>Thursday Event</h3>--}}
+              {{--<p>No limits</p>--}}
+          {{--</div>--}}
+      {{--</div>--}}
+      {{--<div class="item" style="background: url('/images/poster1.jpg') center center no-repeat; background-size: cover">--}}
           {{--<img src="/images/poster1.jpg" alt="...">--}}
-          <div class="carousel-caption">
-              <h3>Friday Event</h3>
-              <p>No limits</p>
-          </div>
-      </div>
-      <div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">
+          {{--<div class="carousel-caption">--}}
+              {{--<h3>Friday Event</h3>--}}
+              {{--<p>No limits</p>--}}
+          {{--</div>--}}
+      {{--</div>--}}
+      {{--<div class="item" style="background: url('/images/slide3.jpg') center center no-repeat; background-size: cover">--}}
           {{--<img src="/images/slide3.jpg" alt="...">--}}
-          <div class="carousel-caption">
-              <h3>Sarturday Event</h3>
-              <p>No limits</p>
-          </div>
-      </div>
-      <div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">
+          {{--<div class="carousel-caption">--}}
+              {{--<h3>Sarturday Event</h3>--}}
+              {{--<p>No limits</p>--}}
+          {{--</div>--}}
+      {{--</div>--}}
+      {{--<div class="item" style="background: url('/images/slide2.jpg') center center no-repeat; background-size: cover">--}}
           {{--<img src="/images/slide2.jpg" alt="..." >--}}
-          <div class="carousel-caption">
-              <h3>Sunday Event</h3>
-              <p>No limits</p>
-          </div>
-      </div>
+          {{--<div class="carousel-caption">--}}
+              {{--<h3>Sunday Event</h3>--}}
+              {{--<p>No limits</p>--}}
+          {{--</div>--}}
+      {{--</div>--}}
 
     
   </div>
@@ -88,9 +87,9 @@
 	
 </div><!-- end of nightheader -->
 <div class="row" id="news_">
+
+</div>
 <!-- end of container -->
 </div>
-
-
 
 @endsection

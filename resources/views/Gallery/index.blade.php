@@ -2,35 +2,10 @@
 
 @section('content')
 <!-- end of nightheader -->
-<div class="body">
-<div class="row" id="upcoming">
- <h2>Upcoming Events</h2>
- @if($events->isEmpty())
-        <p>Currently, No Upcoming Event</p>
-		  @else
-		  @foreach($events as $event)
-	<div class="col-md-3">
-		<div class="thumbnail" id="upcomingthumb" style="background:url('{{ $event->picture }}') center center no-repeat;background-size:contain;">
-		<div class="caption">
-		<div id="captioncontent">
-
-		<a href="/event/more/{{ $event->id }}" class="btn btn-primary" id="viewue">View Details</a>
-		</div>
-		</div>
-		</div>
-	</div>
-	@endforeach
-	@endif
-	<div class="col-md-offset-5 col-md-4">
-	<a href="/all_events/" class="btn btn-primary btn-lg" id="viewue">View All Events</a>
-	</div>
-</div>
-</div>
-<div class="row" id="news">
-<div class="container">
+<div class="container" style="margin-top: 10%;">
  
 	<div class="col-md-8">
-	<h2 align="center">Past Events</h2>
+	<h2 align="center">Gallery</h2>
     <hr class="intro-divider" id="mydivider" />
 		<div class="panel">
 			<div class="panel-heading">
@@ -61,7 +36,7 @@
 					<div class="col-md-8">
 					<p>Second leg of our monthly event in Melbourne on Saturday 9th March 2014 with the 
 					ever-entertaining DJ Kwenda, DJ Bumaye and DJ Sam.</p>
-					 <a href="/event/more/" class="btn btn-primary btn-lg" id="viewue">Read More</a>
+					 <a href="" class="btn btn-primary btn-lg" id="viewue">Read More</a>
 					</div>
 				</div>
 			</div>

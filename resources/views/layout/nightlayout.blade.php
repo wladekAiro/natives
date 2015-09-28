@@ -9,12 +9,6 @@
   <link href="/css/app.css" rel="stylesheet">
   <link href="/css/club.css" rel="stylesheet">
   <style type="text/css">
-  body{
-  background:#000;
-
-  
-  
-}
 </style>
 
   <!-- animate min css -->
@@ -44,37 +38,36 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Natives</a>
+      <a class="navbar-brand" href="/Nightlife"><img src="../../images/natives_logo2.png" /></a>
         <ul class="nav navbar-nav navbar-left">
-            <li><a href="/Nightlife">Home</a> </li>
         </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top:40px;">
       <ul class="nav navbar-nav">
-       
-        
+
+
       </ul>
-     
-      <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Theme Nights
-                  <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Monday Event</a></li>
-                  <li><a href="#">Tuesday Event</a></li>
-                  <li><a href="#">Wednesday Event</a></li>
-                  <li><a href="#">Thursday Event</a></li>
-                  <li><a href="#">Friday Event</a></li>
-                  <li><a href="#">Saturday Event</a></li>
-                  <li><a href="#">Sunday Event</a></li>
-              </ul>
-          </li>
-          <li><a href="/event/">Events</a></li>
-          <li><a href="#">Gallery</a></li>
+
+      <ul class="nav navbar-nav navbar-right" id="club_nav">
+          {{--<li class="dropdown">--}}
+              {{--<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+                  {{--Theme Nights--}}
+                  {{--<span class="caret"></span>--}}
+              {{--</a>--}}
+              {{--<ul class="dropdown-menu">--}}
+                  {{--<li><a href="#">Monday Event</a></li>--}}
+                  {{--<li><a href="#">Tuesday Event</a></li>--}}
+                  {{--<li><a href="#">Wednesday Event</a></li>--}}
+                  {{--<li><a href="#">Thursday Event</a></li>--}}
+                  {{--<li><a href="#">Friday Event</a></li>--}}
+                  {{--<li><a href="#">Saturday Event</a></li>--}}
+                  {{--<li><a href="#">Sunday Event</a></li>--}}
+              {{--</ul>--}}
+          {{--</li>--}}
+          <li><a href="/events/">Events</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
          <li><a href="#">Find Us</a></li>
         <li><a href="#">Contact Us</a></li>
         
@@ -100,7 +93,5 @@
 
 
 </script>
-
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layout.resturantlayout')
+@extends('layout.nightlayout')
 @section('content')
 <div class="row" id="legal">
 	<div class="col-md-12 col-sm-12">

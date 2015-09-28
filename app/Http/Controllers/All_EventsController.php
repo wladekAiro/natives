@@ -1,12 +1,12 @@
 <?php namespace App\Http\Controllers;
 
-use App\Night;
+use App\Envent;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class NightlifeController extends Controller {
+class All_EventsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,14 +15,11 @@ class NightlifeController extends Controller {
 	 */
 	public function index()
 	{
-		//show resturant main page
-		$theme1 = Night::first();
-        $theme2 = Night::skip(1)->take(6)->get();
-
-		
-		return view('Nightlife.index', compact('theme1', 'theme2'));
+		//
+		$events = Envent::all();
+        return view('All_Events.index', compact('events'));
 	}
-   
+
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -52,11 +49,8 @@ class NightlifeController extends Controller {
 	public function show($id)
 	{
 		//
-		$showtheme = Night::find($id);
-
-        return view('ThemeNight.show', compact('showtheme'));
 	}
-      //display a theme on the slider
+
 	/**
 	 * Show the form for editing the specified resource.
 	 *

@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Envent;
+use App\EventDj;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -139,6 +140,17 @@ class AdminEventController extends Controller {
 		//
         Envent::destroy($id);
         return Redirect::to('admin/event/home');
+	}
+	
+	public function assignDj($eventId , $djId){
+        $eventDj = new EventDj();
+
+        $eventDj -> event_id = $eventId;
+        $eventDj -> dj_id = $djId;
+
+        $eventDj -> save();
+
+        return Redirect::to('admin/event/show/'+$eventId);
 	}
 
 }
