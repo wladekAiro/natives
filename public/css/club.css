@@ -1,6 +1,8 @@
 html,body{
-	font-family: tahoma aerial;
     background-color: black;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-style: inherit;
 }
 
 
@@ -133,7 +135,11 @@ background-color: silver;
 
 #slider-container{
     height: 40%;
-    margin-left: 12.5%;
+    margin-left: 1.5%;
+    width: 50%;
+    margin-top: 3%;
+    background-repeat:no-repeat;
+    background-origin:border-box;
 }
 .item{
 	height: 400px;
@@ -145,10 +151,11 @@ background-color: silver;
 	padding-right: auto;
     width:100%;
 	height:100%;
+    background-size: cover;
 }
 .carousel-caption h1{
 	font-size: 100px;
-	font-weight: 100px;
+	font-weight: 200;
 
 }
 
@@ -246,4 +253,31 @@ background-color: silver;
     font-style: inherit;
     /*font-family: "tahoma aerial";*/
     /*font-style: oblique;*/
+}
+
+#facebook_landing{
+    margin-left: 55%;
+    margin-top: -27.5%;
+    color: #ffffff;
+    background-color: inherit;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid #8AC007;
+}
+
+#twiter_landing{
+    color: #ffffff;
+    margin-left: 55%;
+    margin-top: 2%;
+    background-color: inherit;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid #8AC007;
+}
+
+.twitter-timeline{
+    height: inherit;
+    background-color: #fff3d7;
 }

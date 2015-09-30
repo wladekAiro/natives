@@ -3,7 +3,7 @@
 <div class="body">
 <div class="row" id="nightheader">
 
-	<div class="col-md-9 col-sm-12 col-lg-9 col-md-offset-1 col-lg-offset-1" id="slider-container">
+	<div id="slider-container">
 		<div id="nightdescription">
 			<div id="nightslider" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -85,9 +85,27 @@
 
 	</div>
 	
-</div><!-- end of nightheader -->
-<div class="row" id="news_">
+</div>
+    <div id="facebook_landing">
+        <div class="col-md-12 col-lg-12 col-sm-12">
+            Facebook section
 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div><!-- end of nightheader -->
+<div class="row" id="twiter_landing">
+    <div class="col-md-12 col-lg-12 col-sm-12">
+        <a class="twitter-timeline" href="https://twitter.com/maiko_47" data-widget-id="566582921361108992">Tweets by @maiko_47</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+    </div>
 </div>
 <!-- end of container -->
 </div>
