@@ -24,7 +24,7 @@ class AdminEventController extends Controller {
 	public function index()
 	{
 		//
-        $events = Envent::orderBy('date', 'desc')->simplePaginate(1);
+        $events = Envent::orderBy('date', 'desc')->simplePaginate(5);
         return view('Events.Admin.home', compact('events'));
 	}
 

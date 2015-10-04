@@ -27,7 +27,7 @@ class AdminThemeNightController extends Controller {
 	public function index()
 	{
 		//
-        $themeNights = ThemeNight::orderBy('id', 'asc')->simplePaginate(2);
+        $themeNights = ThemeNight::orderBy('id', 'asc')->simplePaginate(5);
         return view('ThemeNight.Admin.home' , compact('themeNights'));
 	}
 

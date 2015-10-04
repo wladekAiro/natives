@@ -18,7 +18,7 @@ class AdminSponsorController extends Controller {
     public function index()
     {
         //
-        $sponsors = Sponsor::orderBy('id', 'asc')->simplePaginate(1);
+        $sponsors = Sponsor::orderBy('id', 'asc')->simplePaginate(5);
         return view('Sponsors/Admin/home' , compact('sponsors'));
     }
 
