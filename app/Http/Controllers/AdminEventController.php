@@ -190,7 +190,7 @@ class AdminEventController extends Controller {
 	   $eventPartner -> partner_id = $eventPartnerId;
 	   $eventPartner -> save();
 	   
-	   return ridirect()->route('more', $eventId)->with('message', 'Partner added Successfully');
+	   return redirect()->route('more', $eventId)->with('message', 'Partner added Successfully');
 	   
 	}
     
