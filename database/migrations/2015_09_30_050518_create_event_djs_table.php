@@ -14,6 +14,7 @@ class CreateEventDjsTable extends Migration {
 	{
 		Schema::create('event_djs', function(Blueprint $table)
 		{
+			$table->timestamps();
 			$table->integer('event_id')->unsigned();
             $table->integer('dj_id')->unsigned();
 			

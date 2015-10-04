@@ -8,6 +8,7 @@
 
   <link href="/css/app.css" rel="stylesheet">
   <link href="/css/club.css" rel="stylesheet">
+  <link href="/css/thumbnail.css" rel="stylesheet">
   <style type="text/css">
 </style>
 
@@ -51,21 +52,6 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right" id="club_nav">
-          {{--<li class="dropdown">--}}
-              {{--<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
-                  {{--Theme Nights--}}
-                  {{--<span class="caret"></span>--}}
-              {{--</a>--}}
-              {{--<ul class="dropdown-menu">--}}
-                  {{--<li><a href="#">Monday Event</a></li>--}}
-                  {{--<li><a href="#">Tuesday Event</a></li>--}}
-                  {{--<li><a href="#">Wednesday Event</a></li>--}}
-                  {{--<li><a href="#">Thursday Event</a></li>--}}
-                  {{--<li><a href="#">Friday Event</a></li>--}}
-                  {{--<li><a href="#">Saturday Event</a></li>--}}
-                  {{--<li><a href="#">Sunday Event</a></li>--}}
-              {{--</ul>--}}
-          {{--</li>--}}
           <li><a href="/events/">Events</a></li>
           <li><a href="/gallery/">Gallery</a></li>
          <li><a href="#">Find Us</a></li>
@@ -79,10 +65,20 @@
 
 @yield('content')
 
+<footer>
+    {{--<h2><i>Tutorial:</i> Growing Thumbnails Portfolio with jQuery &amp; CSS3</h2>--}}
+    <a class="tzine" href="http://wladek-airo.branded.me">Developed by <i>Wladek <b>Airo</b></i> portfolio</a>
+</footer>
+
   <!-- Scripts -->
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/components/jquery-ui/jquery-ui.min.js"></script>
+  {{--<script type="text/javascript" src="/js/thumbnail.js"></script>--}}
+  <script type="text/javascript" src="/js/prefixfree.dynamic-dom.js"></script>
+  <script type="text/javascript" src="/js/prefixfree.jquery.js"></script>
+<script type="text/javascript" src="/js/prefixfree.viewport-units.js"></script>
+
 <script type="text/javascript">
  $(document).ready(function(){
     $('#resturant' ).addClass("animated fadeInLeft",0);

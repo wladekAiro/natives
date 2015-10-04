@@ -19,8 +19,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/admin/theme-night/home">View All</a></li>
-                        <li><a href="/admin/theme-night/form">Create</a></li>
+                        <li><a href="/admin/event/home">View All</a></li>
+                        <li><a href="/admin/event/form">Create</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -28,27 +28,38 @@
         <div class="panel-body">
             <div class="row">
                 <div class="Col-md-4 col-lg-4 col-sm-12">
-                    <img class="thumbnail" src="{{ $event -> picture }}">
+                    <img class="thumbnail" src="{{ $event -> picture }}" width="200px" height="250px">
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12">
                     <p>{{ $event -> description }}</p>
                 </div>
             </div>
+			<div align="center" class="row" style="">
+                <a href="/admin/event/assignDj/{{ $event->id }}" class="btn btn-primary">Assign Dj</a>
+                <a href="/admin/event/addPartnerForm/{{ $event->id }}" class="btn btn-primary">Add Partner</a>
+           
+                <a href="/admin/event/addSponsorForm/{{ $event->id }}" class="btn btn-primary">Add Sponsor</a>
+			</div>
+			<br />
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">Partners</div>
+						@foreach($event -> partner as $eventPartners)
                         <div class="panel-body">
-                            Partners list
+                            {{ $eventPartners -> name }}
                         </div>
+						@endforeach
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">Sponsors</div>
+						@foreach($event -> sponsor as $eventSponsors)
                         <div class="panel-body">
-                            Sponsor list
+                            {{ $eventSponsors -> name }}
                         </div>
+						@endforeach
                     </div>
                 </div>
             </div>
@@ -62,33 +73,17 @@
                                 Dj's
                             </div>
                             <div class="panel-body">
+							@foreach($event -> djs as $eventDj)
                                 <div class="col-md-4">
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="col-md-4">
-                                                Dj 1
+                                                {{ $eventDj -> name }}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="col-md-4">
-                                                Dj 2
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="col-md-4">
-                                                Dj 3
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+									@endforeach
                             </div>
                         </div>
                         @endif

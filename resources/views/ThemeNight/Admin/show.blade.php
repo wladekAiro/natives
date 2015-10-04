@@ -28,27 +28,38 @@
         <div class="panel-body">
             <div class="row">
                 <div class="Col-md-4 col-lg-4 col-sm-12">
-                    <img class="thumbnail" src="{{ $themeNight -> picture }}">
+                    <img class="thumbnail" src="{{ $themeNight -> picture }}" width="250px" height="150px">
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12">
                     <p>{{ $themeNight -> description }}</p>
                 </div>
             </div>
+			<div align="center" class="row" style="">
+                <a href="/admin/theme-night/assignDjForm/{{ $themeNight -> id }}" class="btn btn-primary">Assign Dj</a>
+                <a href="/admin/theme-night/addPartnerForm/{{ $themeNight -> id }}" class="btn btn-primary">Add Partner</a>
+           
+                <a href="/admin/theme-night/addSponsorForm/{{ $themeNight -> id }}" class="btn btn-primary">Add Sponsor</a>
+			</div>
+			<br />
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">Partners</div>
+						@foreach ($themeNight -> partners as $themeNightPartner)
                         <div class="panel-body">
-                            Partners list
+                            {{ $themeNightPartner -> name }}
                         </div>
+						@endforeach
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">Sponsors</div>
+						@foreach ($themeNight -> sponsors as $themeNightSponsor)
                         <div class="panel-body">
-                            Sponsor list
+                             {{ $themeNightSponsor -> name }}
                         </div>
+						@endforeach
                     </div>
                 </div>
             </div>
@@ -59,33 +70,18 @@
                             Dj's
                         </div>
                         <div class="panel-body">
+						@foreach ($themeNight -> djs as $themeNightDj)
                             <div class="col-md-4">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         <div class="col-md-4">
-                                            Dj 1
+                                            {{ $themeNightDj -> name }}
                                         </div>
                                     </div>
+								
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Dj 2
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Dj 3
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+							@endforeach
                         </div>
                     </div>
                 </div>

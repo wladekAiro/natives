@@ -9,7 +9,7 @@ class Dj extends Model {
     protected $fillable = ['name' , 'description' , 'picture'];
 
     public function themeNight(){
-        return $this -> belongsToMany('ThemeNight');
+        return $this -> belongsToMany('App\ThemeNight', 'theme_night_djs', 'theme_night_id', 'dj_id');
     }
 	
 	public function event(){

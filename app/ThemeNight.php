@@ -7,21 +7,18 @@ class ThemeNight extends Model {
 	//
     protected $table = 'theme_nights';
     protected $fillable = ['name', 'description' ,'date','picture'];
-
-    public function host(){
-        return $this->hasMany('Host')->through('ThemeNightHost');
+	
+	 public function djs(){
+        return $this -> belongsToMany('App\Dj' ,'theme_night_djs' , 'theme_night_id' , 'dj_id');
     }
+	
+	public function partners(){
+	     return $this -> belongsToMany('App\Partner', 'theme_night_partners', 'theme_night_id', 'partner_id');
+	}
+	
+	public function sponsors(){
+	     return $this -> belongsToMany('App\Sponsor', 'theme_night_sponsors', 'theme_night_id', 'sponsor_id');
+	}
 
-    public function partner(){
-        return $this->hasManyThrough('Partner' , 'ThemeNightPartner');
-    }
-
-    public function sponsor(){
-        return $this->hasManyThrough('Sponsor' , 'ThemeNightSponsor');
-    }
-
-    public function dj(){
-        return $this->hasManyThrough('Dj' , 'ThemeNightDj');
-    }
 
 }

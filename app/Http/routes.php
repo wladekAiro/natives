@@ -28,10 +28,16 @@ Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
         Route::get('/home' , 'AdminThemeNightController@index');
         Route::get('/form', 'AdminThemeNightController@create');
         Route::post('/create', 'AdminThemeNightController@store');
-        Route::get('/more/{id}' , array('uses' => 'AdminThemeNightController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/more/{id}' , array('uses' => 'AdminThemeNightController@show', 'as' => 'show'))->where('id' , '[1-9][0-9]*');
         Route::get('/edit/{id}' , array('uses' => 'AdminThemeNightController@edit'))->where('id' , '[1-9][0-9]*');
         Route::post('/update/{id}' , array('uses' => 'AdminThemeNightController@update'))->where('id' , '[1-9][0-9]*');
         Route::get('/delete/{id}' , array('uses' => 'AdminThemeNightController@destroy'))->where('id' , '[1-9][0-9]*');
+		Route::get('/assignDjForm/{id}' , array('uses' => 'AdminThemeNightController@assignDjForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/assignDj' , 'AdminThemeNightController@assignDj');
+		Route::get('/addPartnerForm/{id}' , array('uses' => 'AdminThemeNightController@addPartnerForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/addPartner' , 'AdminThemeNightController@addPartner');
+		Route::get('/addSponsorForm/{id}' , array('uses' => 'AdminThemeNightController@addSponsorForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/addSponsor' , 'AdminThemeNightController@addSponsor');
     });
 
     //admin event routes
@@ -39,10 +45,16 @@ Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
         Route::get('/home' , 'AdminEventController@index');
         Route::get('/form' , 'AdminEventController@create');
         Route::post('/create' , 'AdminEventController@store');
-        Route::get('/more/{id}' , array('uses' => 'AdminEventController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/more/{id}' , array('uses' => 'AdminEventController@show', 'as' => 'more'))->where('id' , '[1-9][0-9]*');
         Route::get('/edit/{id}' , array('uses' => 'AdminEventController@edit'))->where('id' , '[1-9][0-9]*');
         Route::post('/update/{id}' , array('uses' => 'AdminEventController@update'))->where('id' , '[1-9][0-9]*');
         Route::get('/delete/{id}' , array('uses' => 'AdminEventController@destroy'))->where('id' , '[1-9][0-9]*');
+		Route::get('/assignDj/{id}' , array('uses' => 'AdminEventController@assignDjForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/assigndj' , 'AdminEventController@assignDj');
+		Route::get('/addPartnerForm/{id}' , array('uses' => 'AdminEventController@addPartnerForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/addPartner' , 'AdminEventController@addPartner');
+		Route::get('/addSponsorForm/{id}' , array('uses' => 'AdminEventController@addSponsorForm'))->where('id' , '[1-9][0-9]*');
+		Route::post('/addSponsor' , 'AdminEventController@addSponsor');
     });
 
     //admin dj routes

@@ -39,7 +39,7 @@
                 @foreach ($sponsors as $sponsor)
                   <tr>
                       <td>
-                          <img src="{{ $sponsor->picture }}" alt="Picture">
+                          <img src="{{ $sponsor->picture }}" alt="Picture" width="200px" height="250px">
                       </td>
                       <td>{{ $sponsor->name }}</td>
                       <td>{{ $sponsor->description }}</td>
@@ -52,4 +52,5 @@
             </table>
         </div>
     </div>
+	{!! $sponsors -> render() !!}
 @endsection

@@ -40,14 +40,14 @@
                         <div class="panel-heading">
                             Event(s)
                         </div>
+						@foreach($sponsor -> event as $event)
+                                   
+                                            {{ $event -> names }}
+                                    
+									@endforeach
                         <div class="panel-body">
                             <div class="col-md-4">
                                 <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-md-4">
-                                            Event 1
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">

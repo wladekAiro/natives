@@ -1,5 +1,5 @@
 html,body{
-    background-color: black;
+    background-color: inherit;
     font-family: sans-serif;
     font-weight: 300;
     font-style: inherit;
@@ -27,9 +27,9 @@ html,body{
 #mynavbar .navbar-brand{
 	color:#FFF;
 }
-.body{
- background-color: black;
-}
+/*.body{*/
+ /*background-color: black;*/
+/*}*/
 .dropdown-menu{
 background-color: silver;
 }
@@ -275,9 +275,4 @@ background-color: silver;
     height: 200px;
     border-radius: 15px;
     border: 2px solid #8AC007;
-}
-
-.twitter-timeline{
-    height: inherit;
-    background-color: #fff3d7;
 }

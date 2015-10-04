@@ -39,7 +39,7 @@
                 @foreach ($themeNights as $themeNight)
                   <tr>
                       <td>
-                          <img src="{{ $themeNight->picture }}" alt="Picture">
+                          <img src="{{ $themeNight->picture }}" alt="Picture" width="250px" height="150px">
                       </td>
                       <td>{{ $themeNight->name }}</td>
                       <td>{{ $themeNight->description }}</td>
@@ -52,4 +52,5 @@
             </table>
         </div>
     </div>
+	{!! $themeNights -> render() !!}
 @endsection

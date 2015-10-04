@@ -28,7 +28,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="Col-md-4 col-lg-4 col-sm-12">
-                    <img class="thumbnail" src="{{ $dj -> picture }}">
+                    <img class="thumbnail" src="{{ $dj -> picture }}" width="200px" height="250px">
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12">
                     <p>{{ $dj -> description }}</p>

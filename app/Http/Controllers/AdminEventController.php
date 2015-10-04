@@ -2,6 +2,11 @@
 
 use App\Envent;
 use App\EventDj;
+use App\Dj;
+use App\Partner;
+use App\Sponsor;
+use App\EventPartner;
+use App\EventSponsor;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -19,8 +24,8 @@ class AdminEventController extends Controller {
 	public function index()
 	{
 		//
-        $events = Envent::all();
-        return view('Events.Admin.home' , compact('events'));
+        $events = Envent::orderBy('date', 'desc')->simplePaginate(1);
+        return view('Events.Admin.home', compact('events'));
 	}
 
 	/**
@@ -142,15 +147,74 @@ class AdminEventController extends Controller {
         return Redirect::to('admin/event/home');
 	}
 	
-	public function assignDj($eventId , $djId){
-        $eventDj = new EventDj();
-
-        $eventDj -> event_id = $eventId;
-        $eventDj -> dj_id = $djId;
-
-        $eventDj -> save();
-
-        return Redirect::to('admin/event/show/'+$eventId);
+	public function assignDjForm($id){
+	
+	   //
+       $event = Envent::find($id);
+	   $djs = Dj::all();
+       return view('Events/Admin/assignDjForm' , compact('event' , 'djs'));
 	}
-
+	public function assignDj(){
+	
+	   //
+       $eventDjId = Input::get('eventDjId');
+	   $eventId = Input::get('eventId');
+	   
+	   $eventDj = new EventDj();
+	   
+	   $eventDj -> event_id = $eventId;
+	   $eventDj -> dj_id = $eventDjId;
+	   $eventDj -> save();
+	   
+	   return redirect()->route('more', $eventId)->with('message', 'Dj assigned Successfully');
+	   
+	}
+	
+	public function addPartnerForm($id){
+	
+	   //
+       $event = Envent::find($id);
+	   $partners = Partner::all();
+       return view('Events/Admin/addPartnerForm' , compact('event' , 'partners'));
+	}
+	
+	public function addPartner(){
+	
+	   //
+       $eventPartnerId = Input::get('eventPartnerId');
+	   $eventId = Input::get('eventId');
+	   
+	   $eventPartner = new EventPartner();
+	   
+	   $eventPartner -> event_id = $eventId;
+	   $eventPartner -> partner_id = $eventPartnerId;
+	   $eventPartner -> save();
+	   
+	   return ridirect()->route('more', $eventId)->with('message', 'Partner added Successfully');
+	   
+	}
+    
+	 public function addSponsorForm($id){
+	
+	   //
+       $event = Envent::find($id);
+	   $sponsors = Sponsor::all();
+       return view('Events/Admin/addSponsorForm' , compact('event' , 'sponsors'));
+	}
+	
+	public function addSponsor(){
+	
+	   //
+       $eventSponsorId = Input::get('eventSponsorId');
+	   $eventId = Input::get('eventId');
+	   
+	   $eventSponsor = new EventSponsor();
+	   
+	   $eventSponsor -> event_id = $eventId;
+	   $eventSponsor -> sponsor_id = $eventSponsorId;
+	   $eventSponsor -> save();
+	   
+	   return redirect()->route('more', $eventId)->with('message', 'Sponsor Successfully');
+	   
+	}
 }

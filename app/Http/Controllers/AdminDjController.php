@@ -19,7 +19,7 @@ class AdminDjController extends Controller {
     public function index()
     {
         //
-        $djs = Dj::all();
+        $djs = Dj::orderBy('id', 'asc')->simplePaginate(1);
         return view('Dj/Admin/home' , compact('djs'));
     }
 

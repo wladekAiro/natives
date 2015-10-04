@@ -65,7 +65,7 @@
                                     <div class="form-group">
                                         <label class="col-md-4 control-label">Date</label>
                                         <div class="col-md-6">
-                                            <input type="date" class="form-control" name="date" value="{{ $event->date }}">
+                                            <input type="date" class="form-control" name="date" id="date" value="{{ $event->date }}">
                                         </div>
                                     </div>
                                     <div class="form-group">

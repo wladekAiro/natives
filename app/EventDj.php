@@ -7,4 +7,5 @@ class EventDj extends Model {
 	//
     protected $table = 'event_djs';
     protected $fillable = ['event_id' , 'dj_id'];
+
 }

@@ -40,7 +40,7 @@
                 @foreach ($events as $event)
                   <tr>
                       <td>
-                          <img src="{{ $event->picture }}" alt="Picture">
+                          <img src="{{ $event->picture }}" alt="Picture" width="200px" height="250px">
                       </td>
                       <td>{{ $event->name }}</td>
                       <td>{{ $event->date }}</td>
@@ -54,4 +54,5 @@
             </table>
         </div>
     </div>
+	{!! $events -> render() !!}
 @endsection

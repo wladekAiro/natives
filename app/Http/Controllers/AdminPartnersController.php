@@ -19,7 +19,7 @@ class AdminPartnersController extends Controller {
     public function index()
     {
         //
-        $partners = Partner::all();
+        $partners = Partner::orderBy('id', 'asc')->simplePaginate(1);
         return view('Partners/Admin/home' , compact('partners'));
     }
 

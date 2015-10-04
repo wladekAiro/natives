@@ -39,7 +39,7 @@
                 @foreach ($djs as $dj)
                   <tr>
                       <td>
-                          <img src="{{ $dj->picture }}" alt="Picture">
+                          <img src="{{ $dj->picture }}" alt="Picture" width="200px" height="250px">
                       </td>
                       <td>{{ $dj->name }}</td>
                       <td>{{ $dj->description }}</td>
@@ -52,4 +52,5 @@
             </table>
         </div>
     </div>
+	{!! $djs -> render() !!}
 @endsection

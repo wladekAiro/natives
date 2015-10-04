@@ -33,39 +33,41 @@
 	<h2 align="center">Past Events</h2>
     <hr class="intro-divider" id="mydivider" />
 		<div class="panel">
+            @foreach($past_events as $past)
 			<div class="panel-heading">
-				<h3 class="panel-title">All White Party</h3>
+				<h3 class="panel-title">{{ $past->name }}&nbsp;&nbsp;&nbsp;&nbsp;{{ $past->date }}</h3>
 			</div>
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-md-4">
-					<img src="/images/allwhite.jpg" class="img-responsive" />
+					<img src="{{ $past->picture }}" class="img-responsive" />
 					</div>
 					<div class="col-md-8">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-					 into electronic typesetting, remaining essentially unchanged.</p>
-					 <a href="" class="btn btn-primary btn-lg" id="viewue">Read More</a>
+					<p>{{ $past->description }}</p>
+					 <a href="/event/more/{{ $past->id }}" class="btn btn-primary btn-lg" id="viewue">Read More</a>
 					</div>
 				</div>
 			</div>
+                @endforeach
+				{!! $past_events -> render() !!}
 		</div><!-- end of panel -->
-		<div class="panel">
-			<div class="panel-heading">
-				<h3 class="panel-title">Kenyan Affair Autumn Bash</h3>
-			</div>
-			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-4">
-					<img src="/images/ka.jpg" class="img-responsive" />
-					</div>
-					<div class="col-md-8">
-					<p>Second leg of our monthly event in Melbourne on Saturday 9th March 2014 with the 
-					ever-entertaining DJ Kwenda, DJ Bumaye and DJ Sam.</p>
-					 <a href="/event/more/" class="btn btn-primary btn-lg" id="viewue">Read More</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		{{--<div class="panel">--}}
+			{{--<div class="panel-heading">--}}
+				{{--<h3 class="panel-title">Kenyan Affair Autumn Bash</h3>--}}
+			{{--</div>--}}
+			{{--<div class="panel-body">--}}
+				{{--<div class="row">--}}
+					{{--<div class="col-md-4">--}}
+					{{--<img src="/images/ka.jpg" class="img-responsive" />--}}
+					{{--</div>--}}
+					{{--<div class="col-md-8">--}}
+					{{--<p>Second leg of our monthly event in Melbourne on Saturday 9th March 2014 with the --}}
+					{{--ever-entertaining DJ Kwenda, DJ Bumaye and DJ Sam.</p>--}}
+					 {{--<a href="/event/more/" class="btn btn-primary btn-lg" id="viewue">Read More</a>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+			{{--</div>--}}
+		{{--</div>--}}
 	</div><!-- end of col-md-4 -->
 	<div class="col-md-4">
 	<a class="twitter-timeline" href="https://twitter.com/maiko_47" data-widget-id="566582921361108992">Tweets by @maiko_47</a>

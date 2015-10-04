@@ -100,11 +100,11 @@
     </div><!-- end of nightheader -->
 <div class="row" id="twiter_landing">
     <div class="col-md-12 col-lg-12 col-sm-12">
-        <a class="twitter-timeline" href="https://twitter.com/maiko_47" data-widget-id="566582921361108992">Tweets by @maiko_47</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-        </script>
+        {{--<a class="twitter-timeline" href="https://twitter.com/maiko_47" data-widget-id="566582921361108992">Tweets by @maiko_47</a>--}}
+        {{--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';--}}
+                {{--if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";--}}
+                    {{--fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");--}}
+        {{--</script>--}}
     </div>
 </div>
 <!-- end of container -->

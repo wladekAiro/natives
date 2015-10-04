@@ -4,6 +4,12 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\ThemeNight;
+use App\Dj;
+use App\Partner;
+use App\Sponsor;
+use App\themeNightDj;
+use App\ThemeNightPartner;
+use App\ThemeNightSponsor;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -21,7 +27,7 @@ class AdminThemeNightController extends Controller {
 	public function index()
 	{
 		//
-        $themeNights = ThemeNight::all();
+        $themeNights = ThemeNight::orderBy('id', 'asc')->simplePaginate(2);
         return view('ThemeNight.Admin.home' , compact('themeNights'));
 	}
 
@@ -118,7 +124,7 @@ class AdminThemeNightController extends Controller {
 
             $destinationPath = public_path() . "/images/assets"; // upload path
             $extension = Input::file('picture')->getClientOriginalExtension(); // getting image extension
-            $filename = "images/assets/" . rand(00000, 99999) . '.' . $extension; // renameing image
+            $filename = "images/assets/" . rand(00000, 99999) . '.' . $extension; // renaming image
 
             Input::file('picture')->move($destinationPath, $filename);
 
@@ -148,5 +154,75 @@ class AdminThemeNightController extends Controller {
 
         return Redirect::to('admin/theme-night/home');
 	}
+	 
+	 public function assignDjForm($id){
+	     
+		 //
+		 $themeNight = ThemeNight::find($id);
+		 $djs = Dj::all();
+		 
+		 return view('ThemeNight/Admin/assignDjForm', compact('themeNight', 'djs'));
+	 
+	 
+	 }
+	 
+	 public function assignDj(){
+	 
+	     $themeNightId = Input::get('themeNightId');
+		 $themeNightDjId = Input::get('themeNightDjId');
+		 
+		 $themeNightDj = new themeNightDj();
+		 
+		 $themeNightDj -> theme_night_id = $themeNightId;
+		 $themeNightDj -> dj_id = $themeNightDjId;
+		 $themeNightDj -> save();
+		 
+		 return redirect()->route('show', $themeNightId)->with('message', 'Dj assigned Successfully');
+		
+	}
+      public function addPartnerForm($id){
+	  
+	    $themeNight = ThemeNight::find($id);
+		$partners = Partner::all();
+		 
+		 return view('ThemeNight/Admin/addPartnerForm', compact('themeNight', 'partners'));
+	  }
+	  
+	  public function addPartner(){
+	  
+	     $themeNightId = Input::get('themeNightId');
+		 $themeNightPartnerId = Input::get('themeNightPartnerId');
+		 
+		 $themeNightPartner = new ThemeNightPartner();
+		 
+		 $themeNightPartner -> theme_night_id = $themeNightId;
+		 $themeNightPartner -> partner_id = $themeNightPartnerId;
+		 $themeNightPartner -> save();
+		 
+		 return redirect()->route('show', $themeNightId)->with('message', 'Partner added Successfully');
+	  }
+	  
+	  public function addSponsorForm($id){
+	     
+		 //
+		 $themeNight = ThemeNight::find($id);
+		 $sponsors = Sponsor::all();
+		 
+		 return view('ThemeNight/Admin/addSponsorForm', compact('themeNight', 'sponsors'));
+}
+       
+	 public function addSponsor(){
+	  
+	     $themeNightId = Input::get('themeNightId');
+		 $themeNightSponsorId = Input::get('themeNightSponsorId');
+		 
+		 $themeNightSponsor = new ThemeNightSponsor();
+		 
+		 $themeNightSponsor -> theme_night_id = $themeNightId;
+		 $themeNightSponsor -> sponsor_id = $themeNightSponsorId;
+		 $themeNightSponsor -> save();
+		 
+		  return redirect()->route('show', $themeNightId)->with('message', 'Sponsor added Successfully');
+	  }
 
 }

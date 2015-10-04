@@ -2,51 +2,91 @@
 
 @section('content')
 <!-- end of nightheader -->
-<div class="container" style="margin-top: 10%;">
- 
-	<div class="col-md-8">
-	<h2 align="center">Gallery</h2>
-    <hr class="intro-divider" id="mydivider" />
-		<div class="panel">
-			<div class="panel-heading">
-				<h3 class="panel-title">All White Party</h3>
-			</div>
-			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-4">
-					<img src="/images/allwhite.jpg" class="img-responsive" />
-					</div>
-					<div class="col-md-8">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-					 into electronic typesetting, remaining essentially unchanged.</p>
-					 <a href="" class="btn btn-primary btn-lg" id="viewue">Read More</a>
-					</div>
-				</div>
-			</div>
-		</div><!-- end of panel -->
-		<div class="panel">
-			<div class="panel-heading">
-				<h3 class="panel-title">Kenyan Affair Autumn Bash</h3>
-			</div>
-			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-4">
-					<img src="/images/ka.jpg" class="img-responsive" />
-					</div>
-					<div class="col-md-8">
-					<p>Second leg of our monthly event in Melbourne on Saturday 9th March 2014 with the 
-					ever-entertaining DJ Kwenda, DJ Bumaye and DJ Sam.</p>
-					 <a href="" class="btn btn-primary btn-lg" id="viewue">Read More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end of col-md-4 -->
-	<div class="col-md-4">
-	<a class="twitter-timeline" href="https://twitter.com/maiko_47" data-widget-id="566582921361108992">Tweets by @maiko_47</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</div>
-</div><!-- end of container -->
+<style type="text/css">
+    /*Time for the CSS*/
+    * {margin: 0; padding: 0;}
+    .slider{
+        width: 640px; /*Same as width of the large image*/
+        position: relative;
+        /*Instead of height we will use padding*/
+        padding-top: 320px; /*That helps bring the labels down*/
+
+        margin: 100px auto;
+
+        /*Lets add a shadow*/
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    }
+
+
+    /*Last thing remaining is to add transitions*/
+    .slider>img{
+        position: absolute;
+        left: 0; top: 0;
+        transition: all 0.5s;
+    }
+
+    .slider input[name='slide_switch'] {
+        display: none;
+    }
+
+    .slider label {
+        /*Lets add some spacing for the thumbnails*/
+        margin: 18px 0 0 18px;
+        border: 3px solid #999;
+
+        float: left;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        /*Default style = low opacity*/
+        opacity: 0.6;
+    }
+</style>
+{{--<div class="container" style="margin-top: 10%;">--}}
+{{--<header>--}}
+    {{--<h1>Natives Gallery</h1>--}}
+{{--</header>--}}
+
+<!--
+We will make a slider with stylized thumbnails using CSS3
+The markup is very simple:
+Radio Inputs
+Labels with thumbnails to detect click event
+Main Image
+-->
+<div class="slider">
+    <input type="radio" name="slide_switch" id="id1"/>
+    <label for="id1">
+        <img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" width="100"/>
+    </label>
+    <img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg"/>
+
+    <!--Lets show the second image by default on page load-->
+    <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+    <label for="id2">
+        <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" width="100"/>
+    </label>
+    <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
+
+    <input type="radio" name="slide_switch" id="id3"/>
+    <label for="id3">
+        <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+    </label>
+    <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+
+    <input type="radio" name="slide_switch" id="id4"/>
+    <label for="id4">
+        <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+    </label>
+    <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+    <input type="radio" name="slide_switch" id="id5"/>
+    <label for="id5">
+        <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg" width="100"/>
+    </label>
+    <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
+</div>
+{{--</div><!-- end of container -->--}}
 </div>
 
 
