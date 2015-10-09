@@ -1,5 +1,5 @@
 html,body{
-    background-color: inherit;
+    background-color: #000000;
     font-family: sans-serif;
     font-weight: 300;
     font-style: inherit;
@@ -215,8 +215,10 @@ background-color: silver;
 }
 
 #single_event{
-    background-color: black;
-    margin-top: 10%;
+    background-color: inherit;
+    margin-top: 8.8%;
+    width: 75%;
+    height: 495px;
 
 }
 
