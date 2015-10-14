@@ -33,4 +33,12 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
+	public function findUs(){
+		return view('find_us');
+	}
+
+    public function contactUsForm(){
+        return view('contact_us');
+    }
+
 }

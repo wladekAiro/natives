@@ -8,7 +8,6 @@
 
   <link href="/css/app.css" rel="stylesheet">
   <link href="/css/club.css" rel="stylesheet">
-  <link href="/css/thumbnail.css" rel="stylesheet">
   <style type="text/css">
 </style>
 
@@ -54,18 +53,20 @@
       <ul class="nav navbar-nav navbar-right" id="club_nav">
           <li><a href="/events/">Events</a></li>
           <li><a href="/gallery/">Gallery</a></li>
-         <li><a href="#">Find Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+         <li><a href="/find_us">Find Us</a></li>
+        <li><a href="/contact_us">Contact Us</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-@yield('content')
-
+<div class="row">
+  <div class="body">
+    @yield('content')
+  </div>
+</div>
 <footer>
+  </div>
     {{--<h2><i>Tutorial:</i> Growing Thumbnails Portfolio with jQuery &amp; CSS3</h2>--}}
     <a class="tzine" href="http://wladek-airo.branded.me">Developed by <i>Wladek <b>Airo</b></i> portfolio</a>
 </footer>

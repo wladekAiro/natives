@@ -18,6 +18,8 @@ Route::get('/Legal', 'WelcomeController@index');
 Route::get('/Resturant', 'ResturantController@index');
 Route::get('/Nightlife', 'NightlifeController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('/find_us' , 'FrontController@findUs');
+Route::get('/contact_us' , 'FrontController@contactUsForm');
 
 //backend routes
 Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
