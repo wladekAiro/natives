@@ -5795,7 +5795,7 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
+  top: -80px;
   left: 0;
   bottom: 0;
   width: 15%;

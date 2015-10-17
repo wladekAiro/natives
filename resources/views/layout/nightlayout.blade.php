@@ -65,12 +65,7 @@
     @yield('content')
   </div>
 </div>
-<footer>
   </div>
-    {{--<h2><i>Tutorial:</i> Growing Thumbnails Portfolio with jQuery &amp; CSS3</h2>--}}
-    <a class="tzine" href="http://wladek-airo.branded.me">Developed by <i>Wladek <b>Airo</b></i> portfolio</a>
-</footer>
-
   <!-- Scripts -->
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -89,6 +84,69 @@
  }); 
 
 
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.thumbs').slides();
+    });
+
+    (function($){
+        $.fn.extend({
+            slides: function() {
+                function getHref(el){
+                    hash = $(el).find('a').attr('href');
+                    if(hash)
+                        return hash.substring(0,hash.length-4);
+                    else
+                        return false;
+                }
+                function setActive(el){
+                    $(el).addClass('active');
+                    if(getHref(el))
+                        $(getHref(el)).show();
+                    else
+                        return false;
+                    $(el).siblings('li').each(function(){
+                        $(this).removeClass('active');
+                        $(getHref(this)).hide();
+                    });
+                }
+                return this.each(function() {
+                    var self = this;
+                    $(this).find('li>a').each(function(){
+                        $(this).attr('href',$(this).attr('href'),'-tab');
+                    });
+                    function handleHash(){
+                        if(location.hash)
+                            setActive($(self).find('a[href='   location.hash   ']').parent());
+                    }
+                    if(location.hash)
+                        handleHash();
+                    setInterval(handleHash,100);
+                    $(this).find('li').each(function(){
+                        if($(this).hasClass('active'))
+                            $(getHref(this)).show();
+                        else
+                            $(getHref(this)).hide();
+                    });
+                });
+            }
+        });
+    })(jQuery);
+
+    $(function(){
+        var div = $('div.thumbs'),
+                ul = $('.thumbs ul'),
+                ulPadding = 0;// unordered list's left margin
+        var divWidth = div.width();
+        div.css({overflow: 'hidden'});
+        var lastLi = ul.find('li:last-child');
+        div.mousemove(function(e){
+            var ulWidth = lastLi[0].offsetLeft   lastLi.outerWidth()   ulPadding;
+            var left = (e.pageX - div.offset().left) * (ulWidth-divWidth) / divWidth;
+            div.scrollLeft(left);
+        });
+    });
 </script>
 </body>
 </html>
