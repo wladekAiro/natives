@@ -38,7 +38,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/Nightlife"><img src="../../images/natives_logo2.png" /></a>
+      <a class="navbar-brand" href="/"><img src="../../images/natives_logo2.png" /></a>
       <ul class="nav navbar-nav navbar-left">
       </ul>
     </div>

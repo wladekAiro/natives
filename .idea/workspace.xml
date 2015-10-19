@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc76-8439-435e-befe-345860fb2906" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="club.iws" />
@@ -34,32 +35,29 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Nightlife/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.458334">
-              <caret line="289" column="226" selection-start-line="289" selection-start-column="226" selection-end-line="289" selection-end-column="226" />
+            <state vertical-scroll-proportion="-12.458333">
+              <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
+      <file leaf-file-name="nightlayout.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7274336">
-              <caret line="820" column="34" selection-start-line="820" selection-start-column="34" selection-end-line="820" selection-end-column="34" />
-              <folding>
-                <element signature="e#32817#32937#0#HTML" expanded="true" />
-                <element signature="e#38119#38197#0#HTML" expanded="true" />
-                <element signature="e#38312#38388#0#HTML" expanded="true" />
-                <element signature="e#40173#40357#0#HTML" expanded="true" />
-                <element signature="e#40385#40571#0#HTML" expanded="true" />
-                <element signature="e#42875#43012#0#HTML" expanded="true" />
-                <element signature="e#45019#45161#0#HTML" expanded="true" />
-                <element signature="e#45217#45265#0#HTML" expanded="true" />
-                <element signature="e#45279#45463#0#HTML" expanded="true" />
-                <element signature="e#45491#45677#0#HTML" expanded="true" />
-                <element signature="e#45761#45898#0#HTML" expanded="true" />
-                <element signature="e#53782#53803#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-13.541667">
+              <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resturantlayout.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.055462185">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,10 +145,8 @@
         <option value="$PROJECT_DIR$/resources/views/Nightlife/index2.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NightlifeController.php" />
         <option value="$PROJECT_DIR$/resources/views/Events/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/app/Gallery.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_18_211449_create_galleries_table.php" />
@@ -165,6 +161,8 @@
         <option value="$PROJECT_DIR$/resources/views/Event/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Nightlife/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/landing.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php" />
       </list>
     </option>
   </component>
@@ -249,6 +247,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="club" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="natives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,20 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="62" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94957983">
-          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -693,18 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Nightlife/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.458334">
-          <caret line="289" column="226" selection-start-line="289" selection-start-column="226" selection-end-line="289" selection-end-column="226" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7274336">
-          <caret line="820" column="34" selection-start-line="820" selection-start-column="34" selection-end-line="820" selection-end-column="34" />
+        <state vertical-scroll-proportion="20.319328">
+          <caret line="813" column="153" selection-start-line="813" selection-start-column="153" selection-end-line="813" selection-end-column="153" />
           <folding>
             <element signature="e#32817#32937#0#HTML" expanded="true" />
             <element signature="e#38119#38197#0#HTML" expanded="true" />
@@ -719,6 +717,30 @@
             <element signature="e#45761#45898#0#HTML" expanded="true" />
             <element signature="e#53782#53803#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Nightlife/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.458333">
+          <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/nightlayout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.541667">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/resturantlayout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055462185">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
