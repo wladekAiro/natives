@@ -375,3 +375,14 @@ footer a i b{
     color:#c92020;
     font-weight: normal;
 }
+
+.g_map{
+    margin-top: 20px;
+    margin-left: 5%;
+    overflow: hidden;
+    width: 700px;
+    background-color: transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

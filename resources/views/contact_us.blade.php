@@ -6,7 +6,7 @@
             max-width: 800px;
             margin: 0 auto;
             margin-top: 4%;
-            background-image: url(http://kreativo.se/backlogin.jpg);
+            background: url(/images/natives_logo2.png) no-repeat cover;
             background-color: transparent;
             font-family: "Helvetica Neue", Helvetica, Arial;
         }
@@ -45,7 +45,7 @@
 
         #signup .sep {
             height: 1px;
-            background: #e8e8e8;
+            background: transparent;
             width: 700px;
             margin: 0px -25px;
         }
@@ -85,7 +85,7 @@
             clear: both;
         }
 
-        #signup .inputs input[type=email]:focus, input[type=password]:focus {
+        #signup .inputs input[type=email]:focus, input[type=text]:focus {
             background: #fff;
             box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
             outline: none;
@@ -123,8 +123,8 @@
             text-decoration: none;
             background: -moz-linear-gradient(
                     top,
-                    #b9c5dd 0%,
-                    #a4b0cb);
+                    #0f0f0f 0%,
+                    #cd5c0a);
             background: -webkit-gradient(
                     linear, left top, left bottom,
                     from(#b9c5dd),
