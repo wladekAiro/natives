@@ -67,9 +67,6 @@
                             <script>
 
                                 jQuery(document).ready(function ($) {
-                                    //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
-                                    //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
-
                                     var _SlideshowTransitions = [
                                         //Collapse Random
                                         { $Duration: 1000, $Delay: 80, $Cols: 10, $Rows: 4, $Clip: 15, $SlideOut: true, $Easing: $JssorEasing$.$EaseOutQuad }
@@ -129,9 +126,6 @@
                                         //, { $Duration: 1500, x: 0.2, y: -0.1, $Delay: 80, $Cols: 10, $Rows: 4, $Clip: 15, $During: { $Left: [0.2, 0.8], $Top: [0.2, 0.8] }, $ChessMode: { $Column: 15, $Row: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseLinear }, $Round: { $Left: 0.8, $Top: 2.5} }
                                     ];
 
-                                    //Reference http://www.jssor.com/development/slider-with-caption-jquery.html
-                                    //Reference http://www.jssor.com/development/reference-ui-definition.html#captiondefinition
-                                    //Reference http://www.jssor.com/development/tool-caption-transition-viewer.html
 
                                     var _CaptionTransitions = [];
                                     _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
@@ -373,10 +367,7 @@
                                             <a class="share-icon share-facebook" target="_blank" href="#" title="Share on Facebook"></a>
                                             <a class="share-icon share-twitter" target="_blank" href="#" title="Share on Twitter"></a>
                                             <a class="share-icon share-googleplus" target="_blank" href="#" title="Share on Google Plus"></a>
-                                            {{--<a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>--}}
-                                            {{--<a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>--}}
-                                            {{--<a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://jssor.com&media=http://jssor.com/img/site/jssor.slider.jpg&description=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Pinterst"></a>--}}
-                                            <a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
+                                            <a class="share-icon share-email" target="_blank" href="#" title="Share by Email"></a>
                                         </div>
                                         <!-- Example to add fixed static share buttons in slider END -->
 
@@ -469,7 +460,6 @@
         <span u="arrowright" class="jssora20r" style="top: 123px; right: 8px;">
         </span>
                                 <!--#endregion Arrow Navigator Skin End -->
-                                <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
                             </div>
                         </div>
 
