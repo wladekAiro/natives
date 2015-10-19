@@ -1,9 +1,9 @@
 <?php namespace App\Http\Controllers;
 
-use App\Night;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\ThemeNight;
 use Illuminate\Http\Request;
 
 class NightlifeController extends Controller {
@@ -16,11 +16,12 @@ class NightlifeController extends Controller {
 	public function index()
 	{
 		//show resturant main page
-		$theme1 = Night::first();
-        $theme2 = Night::skip(1)->take(6)->get();
+//		$theme1 = Night::first();
+//        $theme2 = Night::skip(1)->take(6)->get();
+		$theme = ThemeNight::all();
 
 		
-		return view('Nightlife.index', compact('theme1', 'theme2'));
+		return view('Nightlife.index', compact('theme'));
 	}
    
 	/**

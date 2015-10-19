@@ -60,12 +60,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="row">
-  <div class="body">
     @yield('content')
-  </div>
-</div>
-  </div>
   <!-- Scripts -->
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>

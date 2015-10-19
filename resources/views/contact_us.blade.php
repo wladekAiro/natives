@@ -2,10 +2,10 @@
 @section('content')
     <style type="text/css">
         .containerd {
-            width: 500px;
-            max-width: 600px;
+            width: 700px;
+            max-width: 800px;
             margin: 0 auto;
-            margin-bottom: 10%;
+            margin-top: 4%;
             background-image: url(http://kreativo.se/backlogin.jpg);
             background-color: transparent;
             font-family: "Helvetica Neue", Helvetica, Arial;
@@ -13,7 +13,7 @@
 
         #signup {
             padding: 0px 25px 25px;
-            background: #fff;
+            background: transparent;
             box-shadow:
             0px 0px 0px 5px rgba( 255,255,255,0.4 ),
             0px 4px 20px rgba( 0,0,0,0.33 );
@@ -29,22 +29,24 @@
         }
 
         #signup .header h3 {
-            color: #333333;
+            color: limegreen;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 5px;
+            padding-left: 40%;
         }
 
         #signup .header p {
             color: #8f8f8f;
             font-size: 14px;
             font-weight: 300;
+            padding-left: 36%;
         }
 
         #signup .sep {
             height: 1px;
             background: #e8e8e8;
-            width: 406px;
+            width: 700px;
             margin: 0px -25px;
         }
 
@@ -71,13 +73,13 @@
 
         #signup .inputs input[type=email], input[type=text] , textarea {
             background: #f5f5f5;
-            font-size: 0.8rem;
+            font-size: 1.2rem;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
             border-radius: 3px;
             border: none;
             padding: 13px 10px;
-            width: 450px;
+            width: 650px;
             margin-bottom: 20px;
             box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
             clear: both;

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+	<title>Natives</title>
 	
 	<!--date picker -->
 	<script type="text/javascript">
@@ -12,7 +12,7 @@
     datefield.setAttribute("type", "date")
     if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
         document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
-        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+        document.write('<script src="/home/wladek/Documents/projects/laravel/natives/public/js/jquery-1.9.1.min.js"><\/script>\n')
         document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
     }
 </script>
@@ -84,6 +84,7 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
                             <li><a href="/admin/dj/home">Djs</a></li>
                             <li><a href="/admin/partner/home">Partners</a></li>
                             <li><a href="/admin/sponsor/home">Sponsors</a></li>
+							<li><a href="/admin/gallery/home">Gallery</a></li>
                         </ul>
                     </div>
                 </div>

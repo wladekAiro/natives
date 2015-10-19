@@ -92,6 +92,17 @@ Route::group(array('prefix' => 'admin' , 'middleware' => 'auth') , function(){
         Route::get('/delete/{id}' , array('uses' => 'AdminSponsorController@destroy'))->where('id' , '[1-9][0-9]*');
     });
 
+    //admin gallery routes
+    Route::group(array('prefix' => 'gallery' ) , function(){
+        Route::get('/home' , 'AdminGalleryController@index');
+        Route::get('/form' , array('uses' => 'AdminGalleryController@create', 'as' => 'form'));
+        Route::post('/create' , 'AdminGalleryController@store');
+        Route::get('/more/{id}' , array('uses' => 'AdminGalleryController@show'))->where('id' , '[1-9][0-9]*');
+        Route::get('/edit/{id}' , array('uses' => 'AdminGalleryController@edit'))->where('id' , '[1-9][0-9]*');
+        Route::post('/update/{id}' , array('uses' => 'AdminGalleryController@update'))->where('id' , '[1-9][0-9]*');
+        Route::get('/delete/{id}' , array('uses' => 'AdminGalleryController@destroy'))->where('id' , '[1-9][0-9]*');
+    });
+
 });
 
 
@@ -103,15 +114,11 @@ Route::controllers([
 //front routes
 Route::group(array('prefix' => 'events') , function(){
     Route::get('/', array('as' => 'front.events','uses'=>'EventsController@index'));
+    Route::get('/view-more/{eventId}', array('uses'=>'EventsController@show'))->where('id' , '[1-9][0-9]*');
     Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
 });
 Route::group(array('prefix' => 'all_events') , function(){
     Route::get('/', array('as' => 'front.all_events','uses'=>'All_EventsController@index'));
-    Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
-});
-Route::group(array('prefix' => 'event') , function(){
-    Route::get('/', array('as' => 'front.event','uses'=>'EventController@index'));
-	Route::get('/more/{eventId}', array('uses'=>'EventController@show'))->where('id' , '[1-9][0-9]*');
     Route::get('about_us', array('as' => 'user.aboutUs','uses'=>'UserController@aboutUs'));
 });
 Route::group(array('prefix' => 'gallery') , function(){

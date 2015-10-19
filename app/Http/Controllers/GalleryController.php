@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-
+use App\Gallery;
 class GalleryController extends Controller {
 
 	/**
@@ -15,7 +15,8 @@ class GalleryController extends Controller {
 	public function index()
 	{
 		//
-        return view('Gallery.index');
+		$gallery = Gallery::all();
+        return view('Gallery.index', compact('gallery'));
 	}
 
 	/**
