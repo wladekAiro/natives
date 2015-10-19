@@ -519,25 +519,25 @@
 							<div>
 								<a u="image" href="#"><img src="/images/static/FB_IMG_1441733735550.jpg" alt="image slider" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									mobile ready, touch swipe
+									live football matches
 								</div>
 							</div>
 							<div>
 								<a u="image" href="#"><img src="/images/static/FB_IMG_1441734085939.jpg" alt="jqeury image slider" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									finger catchable right to left
+									free high speed internet
 								</div>
 							</div>
 							<div>
 								<a u="image" href="#"><img src="/images/static/_MG_9701.jpg" alt="responsive image slider" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									responsive, scale smoothly
+									highly proffesional staff
 								</div>
 							</div>
 							<div>
 								<a u="image" href="#"><img src="/images/static/_MG_9772.jpg" alt="touch swipe image slider" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									random caption transition
+									instant food and drink service
 								</div>
 							</div>
 						</div>
@@ -587,33 +587,31 @@
                         <span u="arrowright" class="jssora02r" style="top: 123px; right: 8px;">
                         </span>
 						<!--#endregion Arrow Navigator Skin End -->
-
-						<a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
 					</div>
 					<!-- Jssor Slider End -->
 					<div u="caption" t="RTT*JUP|BR" t2="SPACESHIP|RB" style="position: absolute; left: 0px;top:30px;width:600px;height:30px;font-size:28px;color:#fff;line-height:30px; text-align: center;">
-						widely used image slider example
+						welcome to <em>Natives</em>
 					</div>
 					<div style="position: absolute; top: 110px; left: 640px; width: 320px; height: 250px;">
 						<div u="caption" t="TEAM_1" d="-200" du="50%" class="captionSymbol" style="position: absolute; top: 10px; left: 0px; width: 30px; height: 30px;">+</div>
 						<div u="caption" t="TEAM_1" d="-200" y="100%" class="captionOrange" style="position: absolute; top: 10px; left: 40px; width: 280px; height: 30px;">
-							mobile ready, drag move
+							table reservations
 						</div>
 						<div u="caption" t="TEAM_1" d="-200" du="50%" class="captionSymbol" style="position: absolute; top: 60px; left: 0px; width: 30px; height: 30px;" debug-id="team-caption">+</div>
 						<div u="caption" t="TEAM_1" d="-200" y="50%" class="captionOrange" style="position: absolute; top: 60px; left: 40px; width: 280px; height: 30px;">
-							touch swipe, touch freeze
+							modern kenyan food
 						</div>
 						<div u="caption" t="TEAM_1" d="-200" du="50%" class="captionSymbol" style="position: absolute; top: 110px; left: 0px; width: 30px; height: 30px;">+</div>
 						<div u="caption" t="TEAM_1" d="-200" y="0" class="captionOrange" style="position: absolute; top: 110px; left: 40px; width: 280px; height: 30px;">
-							responsive, scale smoothly
+							modern drinks
 						</div>
 						<div u="caption" t="TEAM_1" d="-200" du="50%" class="captionSymbol" style="position: absolute; top: 160px; left: 0px; width: 30px; height: 30px;">+</div>
 						<div u="caption" t="TEAM_1" d="-200" y="-50%" class="captionOrange" style="position: absolute; top: 160px; left: 40px; width: 280px; height: 30px;">
-							random caption transition
+							live local and international artist
 						</div>
 						<div u="caption" t="TEAM_1" d="-200" du="50%" class="captionSymbol" style="position: absolute; top: 210px; left: 0px; width: 30px; height: 30px;">+</div>
 						<div u="caption" t="TEAM_1" d="-200" y="-100%" class="captionOrange" style="position: absolute; top: 210px; left: 40px; width: 280px; height: 30px;">
-							arrow key navigation
+							live best djs in kenya
 						</div>
 					</div>
 				</div>
@@ -639,25 +637,25 @@
 							<div>
 								<a u=image href="#"><img src="/images/static/FB_IMG_1441733735550.jpg" alt="banner rotator" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									slideshow transition twins
+									natural environment
 								</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/FB_IMG_1441734085939.jpg" alt="jquery banner rotator" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									random caption transition
+									crazy weekdays
 								</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/_MG_9701.jpg" alt="responsive banner rotator" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									mobile ready, touch swipe
+									karaoke nights
 								</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/_MG_9772.jpg" alt="touch swipe banner rotator" /></a>
 								<div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">
-									responsive, scale smoothly
+									live parties
 								</div>
 							</div>
 						</div>
@@ -678,42 +676,39 @@
 						<!-- Arrow Right -->
                         <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
                         </span>
-						<!--#endregion Arrow Navigator Skin End -->
-						<a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
 					</div>
 					<!-- Jssor Slider End -->
 					<div u="caption" t="T|IE*IE" t2="B*IB" style="position: absolute; left: 360px;top:360px;width:600px;height:30px;font-size:28px;color:#fff;line-height:30px; text-align: center;">
-						worldwide popular banner rotator example
+						sports bar
 					</div>
-					<a class="captionTextBlack" u="caption" t="CLIP|L" d="-200" href="http://www.jssor.com/development/tool-caption-transition-viewer.html"
-					   style="position: absolute; top: 30px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">390+
-						caption transitions</a>
+					<a class="captionTextBlack" u="caption" t="CLIP|L" d="-200" href="#"
+					   style="position: absolute; top: 30px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">music+
+						live perfomance</a>
 
 					<div u="caption" t="ZM" t2="NO" style="position: absolute; top: 80px; left: 0px; width: 320px; height: 80px;">
 						<div u="caption" t2="TEAM_2" class="captionOrange" style="position: absolute; top: 0px; left: 0px; width: 200px; height: 30px;">
-							caption can be
+							inclusive from
 						</div>
 						<div u="caption" t2="TEAM_2" class="captionBlack" style="position: absolute; top: 40px; left: 0px; width: 100px; height: 30px;">
-							in team
+							artists
 						</div>
 						<div u="caption" t2="TEAM_2" class="captionBlack" style="position: absolute; top: 40px; left: 130px; width: 100px; height: 30px;">
-							nested
+							djs
 						</div>
 					</div>
 
 					<a class="captionTextBlack" u="caption" t="L|EP" href="http://www.jssor.com/development/tool-slideshow-transition-viewer.html"
-					   style="position: absolute; top: 210px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">360+
-						slideshow transitions</a>
+					   style="position: absolute; top: 210px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">Readily available staff</a>
 
 					<div u="caption" t="B*IB" t2="NO" style="position: absolute; top: 260px; left: 0px; width: 320px; height: 80px;">
 						<div u="caption" t2="TEAM_2" class="captionOrange" style="position: absolute; top: 0px; left: 0px; width: 200px; height: 30px;">
-							slideshow can play
+							instant service on
 						</div>
 						<div u="caption" t2="TEAM_2" class="captionBlack" style="position: absolute; top: 40px; left: 0px; width: 100px; height: 30px;">
-							inside
+							drinks
 						</div>
 						<div u="caption" t2="TEAM_2" class="captionBlack" style="position: absolute; top: 40px; left: 130px; width: 100px; height: 30px;">
-							outside
+							food
 						</div>
 					</div>
 				</div>
@@ -738,19 +733,19 @@
                             overflow: hidden;">
 							<div>
 								<a u=image href="#"><img src="/images/static/FB_IMG_1441733735550.jpg" alt="banner slider" /></a>
-								<div u="thumb">Do you notice it is draggable by mouse/finger?</div>
+								<div u="thumb">Do u want a chill out friday?</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/FB_IMG_1441734085939.jpg" alt="jquery banner slider" /></a>
-								<div u="thumb">Did you drag by either horizontal or vertical?</div>
+								<div u="thumb">Are u interested in a pulsating outing?</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/_MG_9701.jpg" alt="responsive banner slider" /></a>
-								<div u="thumb">Do you notice navigator responses when drag?</div>
+								<div u="thumb">Do u want to experience kenya's finest artists?</div>
 							</div>
 							<div>
 								<a u=image href="#"><img src="/images/static/_MG_9772.jpg" alt="touch swipe banner slider" /></a>
-								<div u="thumb">Do you notice arrow responses when click?</div>
+								<div u="thumb">Are you ready to be thrilled by international Djs'?</div>
 							</div>
 						</div>
 
@@ -792,38 +787,38 @@
 					</div>
 					<!-- Jssor Slider End -->
 					<div u="caption" t="L*IB" t2="SPACESHIP|LB" style="position: absolute; left: 360px;top:30px;width:600px;height:30px;font-size:28px;color:#fff;line-height:30px; text-align: center;">
-						supper scalable banner slider example
+						sports bar and grill
 					</div>
 					<div class="captionTextBlack" u="caption" t="CLIP|LR" d="-200"
-						 style="position: absolute; top: 60px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">deep ui comstomization</div>
+						 style="position: absolute; top: 60px; left: 0px; width: 320px; height: 30px; font-size: 26px; background-color:transparent;">special events hosting</div>
 
 					<div u="caption" t2="ZM" style="position: absolute; top: 120px; left: 0px; width: 320px; height: 120px;">
 						<div u="caption" class="captionOrange" t="TEAM_2" t2="NO" d=-300 style="position: absolute; top: 0px; left: 0px; width: 200px; height: 30px;">
-							image thumbnail
+							dedicated
 						</div>
 						<div u="caption" class="captionBlack" t="TEAM_2" t2="NO" d=-300 style="position: absolute; top: 40px; left: 0px; width: 200px; height: 30px;">
-							text thumbnail
+							theme nights
 						</div>
 						<div u="caption" class="captionBlack" t="TEAM_2" t2="NO" d=-300 style="position: absolute; top: 80px; left: 00px; width: 200px; height: 30px;">
-							mixed thumbnail
+							ample meeting space
 						</div>
 					</div>
 
 					<div u="caption" t="RTT|360" t2="NO" style="position: absolute; top: 290px; left: 0px; width: 320px; height: 80px;">
 						<div u="caption" class="captionOrange" t2="TEAM_2" style="position: absolute; top: 0px; left: 0px; width: 120px; height: 30px;">
-							bullets
+							advanced
 						</div>
 						<div u="caption" class="captionOrange" t2="TEAM_2" style="position: absolute; top: 40px; left: 0px; width: 120px; height: 30px;">
-							thumbnails
+							booking
 						</div>
 						<div u="caption" class="captionBlack" t2="TEAM_2" style="position: absolute; top: 20px; left: 130px; width: 30px; height: 30px;">
-							in
+							on
 						</div>
 						<div u="caption" class="captionBlack" t2="TEAM_2" style="position: absolute; top: 0px; left: 170px; width: 120px; height: 30px;">
-							horizontal
+							parties
 						</div>
 						<div u="caption" class="captionBlack" t2="TEAM_2" style="position: absolute; top: 40px; left: 170px; width: 120px; height: 30px;">
-							vertical
+							events
 						</div>
 					</div>
 				</div>
