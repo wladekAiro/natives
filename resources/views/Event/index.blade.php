@@ -108,7 +108,7 @@
                             </span>
                                         <br />
                                         <br />
-                                        <a href="/events/view-more/{{ $event -> id }}">
+                                        <a href="#">
                                             <img src="/images/img/major/find-out-more-bt.png" border="0" alt="auction slider" width="215"
                                                  height="50" />
                                         </a>
@@ -367,7 +367,6 @@
                             <!-- Thumbnail Item Skin End -->
                         </div>
                         <!--#endregion Thumbnail Navigator Skin End -->
-                        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
                     </div>
                     <!-- Jssor Slider End -->
                 </div>
